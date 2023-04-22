@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 90%;
+            margin: 0px auto;
+            height: 100vh;
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+        .first{
+            width: 40%;
+            grid-area: first;
+        }
+        .item{
+            background-color: rgb(240, 220, 245);
+            margin: 15px;
+            height: 30px;
+            width: 400px;  
+            border-radius: 10px;  
+            padding: 12px 0px 10px 4px; 
+            position: relative;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+
+        } 
+        .item:hover{
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+            transform: scale(1.03);
+        }
+        .second{
+            float: right;
+            position: relative;
+            width: 40%;
+            margin-top: -170px;
+            grid-area: second;
+        }
+        .item1{
+            position: relative;
+            right: 28px;
+        }
+        .item3{
+            position: relative;
+            left: 28px;
+        }
+        .item h3{
+            margin-top: 3px;
+            margin-right: 5px;
+            float: right;
+            padding-right: 70px;
+            color: rgb(78, 15, 78);
+        }
+        .first h1{
+            color: purple;
+        }
+        .first h3{
+            color: rgb(166, 163, 166);
+        }
+        .grid{
+            height: 50vh;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-gap: 20px;
+            width: 93%;
+            position: relative;
+            top: 30px;
+            font-size: 20px;
+            grid-template-areas: "third fourth fifth";
+            grid-area: grid;
+        }
+        .third{
+            background-color:rgb(100, 45, 110);
+            padding: 20px;
+            border-radius: 10px;
+            grid-area: third;
+        }
+        .fourth{
+            background-color:rgb(100, 45, 110);
+            position: relative;
+            top: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            grid-area: fourth;
+        }
+        .fifth{
+            background-color:rgb(100, 45, 110);
+            position: relative;
+            top: 40px;
+            border-radius: 10px;
+            padding: 20px;
+            grid-area: fifth;
+
+        }
+        img{
+            height: 55px;
+           border-radius: 25px;
+         }
+         .third h3{
+            color: white;
+           
+         }
+         .fourth h3{
+            color: white;
+           
+         }.fifth h3{
+            color: white;
+           
+         }
+         .g:hover{
+            box-shadow: 0 10px 15px rgba(0, 0, 0, .7);
+            transform: scale(1.03);
+         }
+         .g{
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+         }
+         @media only screen and (max-width:550px){
+            .container{
+                display: grid;
+                grid-template-columns: .5fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+                grid-template-areas: "first"
+                                       "second"
+                                       "grid";
+                                       grid-row-gap: 20px;
+                                
+            }
+
+            .grid{
+                grid-template-columns: 1fr;
+                grid-template-areas: "third"
+                                        "fourth"
+                                         "fifth";
+                grid-row-gap: 5px;                         
+            }
+            
+            .item{
+                position:relative;
+                left: -10px;
+            }
+            .first{
+              width: auto;
+              margin-bottom: 180px;
+              text-align: center;
+            }
+         }
+         .second img{
+            height: 29px;
+         }
+         .item1{
+            display: flex;
+            justify-content: space-around;
+            color: rgb(78, 15, 78);
+            font-size: 20px;
+            font-weight: bolder;
+         }
+         .item2{
+            display: flex;
+            justify-content: space-around;
+            color: rgb(78, 15, 78);
+            font-size: 20px;
+            font-weight: bolder;
+         }
+         .item3{
+            display: flex;
+            justify-content: space-around;
+            color: rgb(78, 15, 78);
+            font-size: 20px;
+            font-weight: bolder;
+         }
+    </style>
+</head>
+<body> 
+    
+    <div class="container">
+    <div class="first"><h1>10,000+ of our users love our products</h1> <h3>We only provide great products combined with excellent customer service.See what our satisfied customers are saying about our services </h3> </div>
+     <div class="second">
+        <div class="item item1"><div> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> </div> <div> Rated 5 Stars in Reviews </div> </div>
+        <div class="item item2"><div> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> </div> <div> Rated 5 Stars in Reviews </div></div>
+        <div class="item item3"><div> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> <img src="https://static.vecteezy.com/system/resources/previews/009/342/149/non_2x/golden-stars-clipart-design-illustration-free-png.png" alt=""> </div> <div> Rated 5 Stars in Reviews </div></div>
+     </div>
+     <div class="grid">
+     <div class="g third"><img src="https://cdn-icons-png.flaticon.com/512/3006/3006899.png" alt=""> <span style="font-size: 25px; font-weight: bolder; color: white;" >Colton Smith</span><span style="font-size: 15px; color: rgb(235, 7, 144); font-weight: bolder; font-size: 20px;"> <br> (Verified Buyer)</span>  
+     <h3>"We needed the same printed design as the one we had ordered a week prior.
+        Not only did they find the original order,but we also received it in time.Excellent!"</h3></div>
+        <div class="g fourth"><img src="https://cdn-icons-png.flaticon.com/512/4113/4113026.png" alt=""> <span style="font-size: 25px; font-weight: bolder; color: white;" >Irene Roberts</span><span style="font-size: 15px; color: rgb(235, 7, 144); font-weight: bolder; font-size: 20px;"> <br> (Verified Buyer)</span>  
+        <h3>"Customer service is always excellent and very quick turn around.Completely delighted with the simplicity of the purchase and the speed of delivery."</h3>
+        </div>
+        <div class="g fifth"><img src="https://cdn-icons-png.flaticon.com/512/3006/3006899.png" alt=""> <span style="font-size: 25px; font-weight: bolder; color: white;" >Daniel Clifford</span><span style="font-size: 15px; color: rgb(235, 7, 144); font-weight: bolder; font-size: 20px;"> <br> (Verified Buyer)</span>  
+        <h3>"Put an order with this company and can only praise them for the very high standard.
+            Will definitely use them again and recommend the to everyone!"</h3>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
